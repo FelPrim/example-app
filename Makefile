@@ -38,7 +38,6 @@ endif
 # -fprofile-generate + -fprofile-use (should consider manual profiling instead)
 
 $(OUT)/$(TARGET): $(SRC)/main.c
-	mkdir $(OUT)
 	$(CC) $(CFLAGS) $< -o $@
 
 run: $(OUT)/$(TARGET)
